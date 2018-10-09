@@ -159,7 +159,7 @@ public class Game
 			{
 				
 				
-				int rand = (int)(Math.random() * enemyHand.size()); 
+				//int rand = (int)(Math.random() * enemyHand.size()); 
 				
 				
 				System.out.println("What color would you like to ask for?");
@@ -185,11 +185,11 @@ public class Game
 									myScore++;
 									System.out.println("You have " + myScore + " points.");
 									seeHand();
-									System.out.println("testing 3");
+									//System.out.println("testing 3");
 								}
 									
 						 }
-					System.out.println("testing 2");
+					//System.out.println("testing 2");
 //					System.out.println("#2 " + myNumberOfCards);
 
 
@@ -210,7 +210,8 @@ public class Game
 //							System.out.println("#4" + myNumberOfCards);
 						}
 					
-				
+					int rand = (int)(Math.random() * enemyHand.size()); 
+					
 					System.out.println("Do you have a " + enemyHand.get(rand).getColor() + " " + enemyHand.get(rand).getValue());
 					String response = userInputString.nextLine();
 					
@@ -242,7 +243,7 @@ public class Game
 							seeHand();
 							
 						}
-					System.out.println("testing");
+					//System.out.println("testing");
 					
 					
 					if((myHand.size() == 0) || (enemyHand.size() == 0) || (deck.size() == 0))
