@@ -102,7 +102,7 @@ public class Game
 				
 			}
 
-		private static void endGame()
+		static void endGame()
 			{
 				introduction();
 				
@@ -228,6 +228,7 @@ public class Game
 													enemyScore++;
 													System.out.println("I have " + enemyScore + " points");
 													seeHand();
+													break;
 													
 												}
 								}
@@ -256,7 +257,7 @@ public class Game
 				
 			}
 
-		private static void fillDeck()
+		static void fillDeck()
 			{
 				
 
