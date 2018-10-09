@@ -25,7 +25,7 @@ public class Game
 			//introduction();
 			//seeEnemyHand();
 			//myRepeats();
-			enemyRepeats();
+			//enemyRepeats();
 		}
 
 		private static void enemyRepeats()
@@ -110,6 +110,11 @@ public class Game
 					{
 						fishing();
 						
+//						System.out.println("***The enemy hand size is " + enemyHand.size());
+//						System.out.println("***The deck size is " + deck.size());
+//						System.out.println("The enemy hand is");
+//						seeEnemyHand();
+//						
 
 					}
 				
@@ -153,18 +158,9 @@ public class Game
 		private static void fishing()
 			{
 				
-				int enemyNumberOfCards = 5;
+				
 				int rand = (int)(Math.random() * enemyHand.size()); 
 				
-//				Scanner userInputString = new Scanner(System.in);
-//				Scanner userInputInt = new Scanner(System.in);
-//				System.out.println("Hi, whats your name?");
-//				String name = userInputString.nextLine();
-//				System.out.println("Hi " + name + ", let's play Go Fish. Your hand is: ");
-//				
-//				fillHand();
-//				seeHand();
-			
 				
 				System.out.println("What color would you like to ask for?");
 				String colorAsked = userInputString.nextLine();
@@ -176,7 +172,7 @@ public class Game
 //							System.out.println("#1 " + myNumberOfCards);
 							if((enemyHand.get(i).getValue() == valueAsked) && (enemyHand.get(i).getColor().equals(colorAsked)))
 								{
-									System.out.println("I do have a " + colorAsked + " " + valueAsked + " !");
+									System.out.println("I do have a " + colorAsked + " " + valueAsked + "!");
 									enemyHand.remove(i);
 									
 									for(int j = 0; j < myHand.size(); j++)
@@ -189,9 +185,11 @@ public class Game
 									myScore++;
 									System.out.println("You have " + myScore + " points.");
 									seeHand();
+									System.out.println("testing 3");
 								}
 									
 						 }
+					System.out.println("testing 2");
 //					System.out.println("#2 " + myNumberOfCards);
 
 
@@ -234,6 +232,7 @@ public class Game
 								}
 							
 						}
+					
 					else
 						{
 							System.out.println("Ok, I'll go fish!");
@@ -243,7 +242,7 @@ public class Game
 							seeHand();
 							
 						}
-					
+					System.out.println("testing");
 					
 					
 					if((myHand.size() == 0) || (enemyHand.size() == 0) || (deck.size() == 0))
